@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #e6e2e2, #6a0ee2);
+}
+
+.calculator{
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 15px;
+    background: black;
+    box-shadow: 0px 3px 15px;
+}
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow:0px 3px 15px; 
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: white;
+}
+
+input::placeholder{
+    color:gray;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius:20px;
+    background: transparent;
+    color:white;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px;
+    cursor: pointer;
+}
+
+.equalBtn{
+    background-color: #dda73c;
+}
+
+.operator{
+    color: #f2f7ef;
+}
+
+@media only screen and (max-width: 450px) {
+    body{
+        height: 95vh;
+        margin-top: 15px;
+        margin-bottom: -0px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    body{
+        height: 98vh;
+        margin-top: 5px;
+        margin-bottom: -0px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    body{
+        height: 100vh;
+        margin-top: 5px;
+        margin-bottom: -0px;
+    }
+}
+@media only screen and (max-width: 379px) {
+    body{
+        height: 87vh;
+        margin-top: 35px;
+        margin-bottom: -0px;
+    }
+    .calculator{
+        width: 90%;
+    }
+    button{
+        width: 50px;
+        height: 50px;
+    }
+    input{
+        width: 280px;
+    }
+}
+@media only screen and (max-width: 372px) {
+    body{
+        height: 85vh;
+        margin-top: 35px;
+        margin-bottom: -0px;
+    }
+    .calculator{
+        width: 80%;
+    }
+    button{
+        width: 40px;
+        height: 40px;
+    }
+    input{
+        width: 240px;
+    }
+}
+@media only screen and (max-width: 367px) {
+    body{
+        height: 75vh;
+        margin-top: 55px;
+        margin-bottom: -0px;
+    }
+    .calculator{
+        width: 80%;
+    }
+    button{
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    input{
+        width: 220px;
+    }
+}
+@media only screen and (max-width: 320px) {
+
+    input{
+        width: 200px;
+    }
+}
+
